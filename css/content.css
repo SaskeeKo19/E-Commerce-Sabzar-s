@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+#containerDelicacies,
+#containerRecipes {
+    display: grid;
+    grid-gap: 70px 20px;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+#box {
+    width: 100%;
+    background-color: white;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
+}
+
+#box:hover {
+    box-shadow: 1px 6px 3px 0 rgb(185, 185, 185);
+}
+
+#containerDelicacies img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#containerRecipes img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#details {
+    padding: 0 15px;
+    text-transform: capitalize;
+}
+
+#box a {
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-weight: 100;
+}
+
+h2 {
+    color: rgb(3, 94, 94);
+}
+
+/* ----------------------------- MEDIA QUERY --------------------------- */
+
+@media(max-width: 1070px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    #containerDelicacies,
+    #containerRecipes {
+        width: 95%;
+        grid-gap: 10px;
+    }
+}
+
+@media(max-width: 850px) {
+    h1 {
+        width: 80%;
+    }
+
+    #containerDelicacies,
+    #containerRecipes {
+        display: grid;
+        grid-gap: 70px 20px;
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+    }
+}
+
+@media(max-width: 650px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h1 {
+        width: 90%;
+    }
+
+    #containerDelicacies,
+    #containerRecipes {
+        width: 90%;
+    }
+}
+
+@media(max-width: 600px) {
+    h1 {
+        width: 70%;
+    }
+
+    #containerDelicacies,
+    #containerRecipes {
+        width: 70%;
+    }
+}
+
+@media(max-width: 505px) {
+    h1 {
+        width: 80%;
+    }
+
+    #containerDelicacies,
+    #containerRecipes {
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Order Button Container */
+.order-container {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Creative Order Button */
+.order-btn {
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Hover Effect */
+.order-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #ffc371, #ff5f6d);
+}
+
+/* Button inner shine effect */
+.order-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: all 0.75s ease;
+    z-index: -1;
+    opacity: 0;
+}
+
+.order-btn:hover::before {
+    opacity: 1;
+    width: 400%;
+    height: 400%;
+    transition: all 0.75s ease;
+}
+
+/* Responsive for mobile screens */
+@media (max-width: 768px) {
+    .order-btn {
+        font-size: 1.2rem;
+        padding: 12px 30px;
+    }
+}

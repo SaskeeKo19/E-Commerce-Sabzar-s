@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../../../REACT/Vite e-Commerce/fullstack-e-commerce"
+		},
+		{
+			"path": "../../../REACT/React Maxmillan/React Styling"
+		},
+		{
+			"path": "../../../ZeroToHundred/Zerodha"
+		},
+		{
+			"path": "../../../ZeroToHundred/Cohort Assignments"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "E-Commerce Sabzar's",
+		"Codegeex.RepoIndex": true
+	}
+}
